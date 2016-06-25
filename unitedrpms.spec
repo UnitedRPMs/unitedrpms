@@ -1,6 +1,6 @@
 Name:           unitedrpms
 Version:        24
-Release:        1
+Release:        2
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -49,6 +49,10 @@ install -d -m755 \
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Fri Jun 24 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-2
+- Added local gpg keys
+
 * Tue Jun 07 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-1
 - Initial build
 
