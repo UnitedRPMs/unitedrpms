@@ -25,6 +25,9 @@ For Fedora 24:
 For Fedora 25: 
 * su -c 'dnf -y install https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/RPM/unitedrpms-25-1.noarch.rpm'
 
+For Fedora 26: 
+* su -c 'dnf -y install https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/RPM/unitedrpms-26-1.noarch.rpm'
+
 
 
 
