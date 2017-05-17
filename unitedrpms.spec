@@ -1,6 +1,6 @@
 Name:           unitedrpms
-Version:        24
-Release:        2
+Version:        %{fedora}
+Release:        3
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -49,6 +49,9 @@ install -d -m755 \
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Tue May 16 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-3
+- New changes
 
 * Fri Jun 24 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-2
 - Added local gpg keys
