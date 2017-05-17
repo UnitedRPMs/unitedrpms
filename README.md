@@ -1,4 +1,6 @@
 #           unitedrpms
+
+[![Build Status](https://travis-ci.org/UnitedRPMs/unitedrpms.svg?branch=master)](https://travis-ci.org/UnitedRPMs/unitedrpms)
  
 Summary:        UnitedRPMs Repository Configuration
  
