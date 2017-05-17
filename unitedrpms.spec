@@ -6,8 +6,8 @@ Summary:        UnitedRPMs Repository Configuration
 Group:          System Environment/Base
 License:        GPLv3
 URL:            https://unitedrpms.github.io/
-Source1:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms.github.io/master/unitedrpms.repo
-Source2:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms.github.io/master/URPMS-GPG-PUBLICKEY-Fedora-%{version}
+Source1:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/unitedrpms.repo
+Source2:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/URPMS-GPG-PUBLICKEY-Fedora-24
 BuildArch:      noarch
 
 
@@ -50,8 +50,17 @@ install -d -m755 \
 
 %changelog
 
-* Tue May 16 2017 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-3
+* Tue May 16 2017 David Vásquez <davidjeremias82 AT gmail DOT com> 
 - New changes
+
+* Tue Mar 14 2017 Pavlo Rudyi <paulcarroty at riseup.net> - 27-1
+- Reconfigure for Fedora 27
+
+* Sun Oct 16 2016 Pavlo Rudyi <paulcarroty at riseup.net> - 26-1
+- Reconfigure for Fedora 26
+
+* Mon Jul 18 2016 Pavlo Rudyi <paulcarroty at riseup.net> - 25-1
+- Reconfigure for Fedora 25
 
 * Fri Jun 24 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-2
 - Added local gpg keys
