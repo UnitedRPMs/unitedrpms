@@ -1,6 +1,6 @@
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        3
+Release:        3%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
