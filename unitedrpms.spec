@@ -50,7 +50,7 @@ install -d -m755 \
 
 %changelog
 
-* Tue May 16 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-3
+* Tue May 16 2017 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-3
 - New changes
 
 * Fri Jun 24 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 24-2
