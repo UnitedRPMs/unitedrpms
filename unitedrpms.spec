@@ -1,6 +1,6 @@
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -49,6 +49,9 @@ install -d -m755 \
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+* Mon Jun 12 2017 Sérgio Basto <sergio@serjux.com> - 25-4
+- Use baseurl instead mirrorlist because mirrorlist give us problems
+- Better repo names
 
 * Tue May 16 2017 David Vásquez <davidjeremias82 AT gmail DOT com> 
 - New changes
