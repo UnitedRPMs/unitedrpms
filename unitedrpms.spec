@@ -46,9 +46,14 @@ install -d -m755 \
 
 %files
 %{_sysconfdir}/pki/rpm-gpg/*
-%config(noreplace) %{_sysconfdir}/yum.repos.d/*
+# config(noreplace) %{_sysconfdir}/yum.repos.d/*
+%{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Thu Jun 15 2017 Unitedrpms Project <unitedrpms AT protonmail DOT com> - 25-5
+- Replaced old config for easy migration to new release Fedora
+
 * Mon Jun 12 2017 Sérgio Basto <sergio@serjux.com> - 25-4
 - Use baseurl instead mirrorlist because mirrorlist give us problems
 - Better repo names
