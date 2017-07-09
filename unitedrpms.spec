@@ -1,6 +1,6 @@
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -50,6 +50,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Sat Jul 08 2017 Unitedrpms Project <unitedrpms AT protonmail DOT com> - 25-6
+- Added priority for avoids problems with others third-party repositories
 
 * Thu Jun 15 2017 Unitedrpms Project <unitedrpms AT protonmail DOT com> - 25-5
 - Replaced old config for easy migration to new release Fedora
