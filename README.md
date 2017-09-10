@@ -21,7 +21,7 @@ You need delete old repositories:
 
 ## Command Line Setup
 
-**For Fedora 24-27:**
+**For Fedora 24-28:**
 
 ```
 1) su
