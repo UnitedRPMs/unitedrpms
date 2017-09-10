@@ -4,7 +4,7 @@
  
 Summary:        UnitedRPMs Repository Configuration
  
-Version:        24-27
+Version:        24-28
  
 License:        GPLv3
 
