@@ -9,7 +9,7 @@ URL:            https://unitedrpms.github.io/
 Source1:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/unitedrpms.repo
 Source2:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/URPMS-GPG-PUBLICKEY-Fedora-24
 BuildArch:      noarch
-
+Recommends:     unitedrpms-appstream-data
 
 %description
 UnitedRPMs is the solution for people with unstable Fedora distributions, 
@@ -53,6 +53,7 @@ install -d -m755 \
 
 * Sun Nov 19 2017 David Vásquez <davidjeremias82 AT gmail DOT com> - 27-7
 - Enabled metadata
+- Weak dependency to unitedrpms-appstream-data
 
 * Sat Jul 08 2017 Unitedrpms Project <unitedrpms AT protonmail DOT com> - 25-6
 - Added priority for avoids problems with others third-party repositories
