@@ -21,12 +21,12 @@ You need delete old repositories:
 
 ## Command Line Setup
 
-**For Fedora 24-28:**
+**For Fedora 25-28:**
 
 ```
 1) su
 
-2) dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/6/unitedrpms-$(rpm -E %fedora)-6.fc$(rpm -E %fedora).noarch.rpm
+2) dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/7/unitedrpms-$(rpm -E %fedora)-7.fc$(rpm -E %fedora).noarch.rpm
 ```
 
 ## How to import our gpg key
