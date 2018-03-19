@@ -1,6 +1,6 @@
 [unitedrpms]
 name=unitedrpms $releasever - $basearch
-#mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms.github.io/master/mirrorlist_F$releasever_x86_64.txt
+mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_x86_64.txt
 baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/$basearch/
 enabled=1
 priority=1
@@ -13,7 +13,7 @@ enabled_metadata=1
 
 [unitedrpms-source]
 name=unitedrpms $releasever - Source
-#mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms.github.io/master/mirrorlist_F$releasever_source.txt
+mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_source.txt
 baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/srpm/
 enabled=0
 priority=1
@@ -25,7 +25,7 @@ repo_gpgcheck=1
 
 [unitedrpms-debuginfo]
 name=unitedrpms $releasever - $basearch - Debug
-#mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms.github.io/master/mirrorlist_F$releasever_debug.txt
+mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_debug.txt
 baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/$basearch/debug/
 enabled=0
 priority=1

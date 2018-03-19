@@ -1,0 +1,2 @@
+https://sourceforge.net/projects/unitedrpms/files/$releasever/srpm/
+https://osdn.net/projects/unitedrpms/storage/$releasever/srpm/
