@@ -1,6 +1,6 @@
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -50,6 +50,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Wed Mar 21 2018 David Vásquez <davidjeremias82 AT gmail DOT com> - 27-8
+- Mirror list enabled
 
 * Sun Nov 19 2017 David Vásquez <davidjeremias82 AT gmail DOT com> - 27-7
 - Enabled metadata
