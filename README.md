@@ -4,7 +4,7 @@
  
 Summary:        UnitedRPMs Repository Configuration
  
-Version:        24-28
+Version:        26-29
  
 License:        GPLv3
 
@@ -21,7 +21,7 @@ You need delete old repositories:
 
 ## Command Line Setup
 
-**For Fedora 25-28:**
+**For Fedora 26-29:**
 
 ```
 1) su
