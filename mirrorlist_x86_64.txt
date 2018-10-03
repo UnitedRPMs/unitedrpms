@@ -1,2 +1,2 @@
-https://osdn.net/projects/unitedrpms/storage/$releasever/$basearch/
 https://sourceforge.net/projects/unitedrpms/files/$releasever/$basearch/
+https://osdn.net/projects/unitedrpms/storage/$releasever/$basearch/
