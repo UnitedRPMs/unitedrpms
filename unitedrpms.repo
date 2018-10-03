@@ -9,6 +9,7 @@ skip_if_unavailable=1
 gpgkey=file:///etc/pki/rpm-gpg/URPMS-GPG-PUBLICKEY-Fedora-24
 gpgcheck=1
 repo_gpgcheck=1
+type=rpm
 enabled_metadata=1
 
 [unitedrpms-source]
@@ -22,6 +23,7 @@ skip_if_unavailable=1
 gpgkey=file:///etc/pki/rpm-gpg/URPMS-GPG-PUBLICKEY-Fedora-24
 gpgcheck=1
 repo_gpgcheck=1
+type=rpm
 
 [unitedrpms-debuginfo]
 name=unitedrpms $releasever - $basearch - Debug
@@ -34,3 +36,4 @@ skip_if_unavailable=1
 gpgkey=file:///etc/pki/rpm-gpg/URPMS-GPG-PUBLICKEY-Fedora-24
 gpgcheck=1
 repo_gpgcheck=1
+type=rpm
