@@ -1,6 +1,8 @@
+%global target_arch x86_64
+
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -43,6 +45,10 @@ install -d -m755 \
 # Yum .repo files
 %{__install} -p -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
 
+# Signed repositories failed detecting variables $releasever and $basearch
+# Sure a bug...
+sed -i 's|$releasever|%{fedora}|g' $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/unitedrpms.repo
+sed -i 's|$basearch|%{target_arch}|g' $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/unitedrpms.repo
 
 %files
 %{_sysconfdir}/pki/rpm-gpg/*
@@ -50,6 +56,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Sat Oct 06 2018 David Va <davidva AT tuta DOT io> - 28-9
+- Changed to specific architectures and release in mirror list
 
 * Wed Mar 21 2018 David Vásquez <davidjeremias82 AT gmail DOT com> - 27-8
 - Mirror list enabled
