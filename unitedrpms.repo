@@ -1,5 +1,6 @@
 [unitedrpms]
 name=unitedrpms $releasever - $basearch
+failovermethod=priority
 mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_x86_64.txt
 baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/$basearch/
 enabled=1
@@ -14,6 +15,7 @@ enabled_metadata=1
 
 [unitedrpms-source]
 name=unitedrpms $releasever - Source
+failovermethod=priority
 mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_source.txt
 baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/srpm/
 enabled=0
@@ -27,6 +29,7 @@ type=rpm
 
 [unitedrpms-debuginfo]
 name=unitedrpms $releasever - $basearch - Debug
+failovermethod=priority
 mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_debug.txt
 baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/$basearch/debug/
 enabled=0
