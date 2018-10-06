@@ -6,7 +6,7 @@ services:
 script:
 # ENABLE tne next line and delete add a "#" the next lines; if you want build with mock
 #- travis_wait 40 docker run --cap-add=SYS_ADMIN davidva/unibuild /bin/sh /urpms -g UnitedRPMs/spotify -s spotify.spec -t fedora-25-x86_64
-- docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-27 /bin/sh -c "rm -f urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/unitedrpms -s unitedrpms.spec -r true -d 'dist .fc27' -u true"
+- docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-30 /bin/sh -c "rm -f urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/unitedrpms -s unitedrpms.spec -r true -d 'dist .fc30' -u true"
 notifications:
   webhooks:
     urls:
