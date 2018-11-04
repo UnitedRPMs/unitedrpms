@@ -2,7 +2,7 @@
 
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -46,9 +46,9 @@ install -d -m755 \
 %{__install} -p -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
 
 # Signed repositories failed detecting variables $releasever and $basearch
-# Sure a bug...
-sed -i 's|$releasever|%{fedora}|g' $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/unitedrpms.repo
-sed -i 's|$basearch|%{target_arch}|g' $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/unitedrpms.repo
+# Sure a bug... https://bugzilla.redhat.com/show_bug.cgi?id=1636743
+#sed -i 's|$releasever|%{fedora}|g' $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/unitedrpms.repo
+#sed -i 's|$basearch|%{target_arch}|g' $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/unitedrpms.repo
 
 %files
 %{_sysconfdir}/pki/rpm-gpg/*
@@ -56,6 +56,9 @@ sed -i 's|$basearch|%{target_arch}|g' $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Sat Nov 03 2018 David Va <davidva AT tuta DOT io> - 28-10
+- Go back to variables by default
 
 * Sat Oct 06 2018 David Va <davidva AT tuta DOT io> - 28-9
 - Changed to specific architectures and release in mirror list
