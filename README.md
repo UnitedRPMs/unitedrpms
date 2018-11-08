@@ -26,7 +26,7 @@ You need delete old repositories:
 ```
 1) su
 
-2) dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/10/unitedrpms-$(rpm -E %fedora)-10.fc$(rpm -E %fedora).noarch.rpm
+2) dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/11/unitedrpms-$(rpm -E %fedora)-11.fc$(rpm -E %fedora).noarch.rpm
 ```
 
 ## How to import our gpg key
@@ -42,7 +42,7 @@ Our GPG key is integrated in every `unitedrpms-*.noarch.rpm` package. You can al
 You can (*and must if feel doubts!*) check the GPG signature and hash sums of every package. Examples:
 
 ```
-# rpm -K https://github.com/UnitedRPMs/unitedrpms/releases/download/10/unitedrpms-$(rpm -E %fedora)-10.fc$(rpm -E %fedora).noarch.rpm
+# rpm -K https://github.com/UnitedRPMs/unitedrpms/releases/download/11/unitedrpms-$(rpm -E %fedora)-11.fc$(rpm -E %fedora).noarch.rpm
 ```
 
  If all goes well, the following message is displayed: md5 gpg OK. This means that the signature of the package has been verified, and that it is [not corrupt](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-check-rpm-sig.html). 
