@@ -1,7 +1,7 @@
 [unitedrpms]
 name=unitedrpms $releasever - $basearch
 failovermethod=priority
-mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_F$releasever_x86_64.txt
+mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_$releasever_x86_64.txt
 baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/x86_64/
 enabled=1
 priority=1
