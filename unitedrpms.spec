@@ -2,7 +2,7 @@
 
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        10%{?dist}
+Release:        11%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -56,6 +56,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Wed Nov 07 2018 David Va <davidva AT tuta DOT io> - 28-11
+- Disabled mirrorlist; bugs in official variables in libdnf and dnf...
 
 * Sat Nov 03 2018 David Va <davidva AT tuta DOT io> - 28-10
 - Go back to variables by default
