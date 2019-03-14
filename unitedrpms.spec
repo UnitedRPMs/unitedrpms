@@ -2,7 +2,7 @@
 
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        11%{?dist}
+Release:        12%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -56,6 +56,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Wed Mar 13 2019 David Va <davidva AT tuta DOT io> - 28-12
+- Enabled mirror list templates for F31
 
 * Wed Nov 07 2018 David Va <davidva AT tuta DOT io> - 28-11
 - Disabled mirrorlist; bugs in official variables in libdnf and dnf...
