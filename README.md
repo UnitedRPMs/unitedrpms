@@ -4,7 +4,7 @@
  
 Summary:        UnitedRPMs Repository Configuration
  
-Version:        28-30
+Version:        28-31
  
 License:        GPLv3
 
@@ -26,7 +26,7 @@ You need delete old repositories:
 ```
 1) su
 
-2) dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/11/unitedrpms-$(rpm -E %fedora)-11.fc$(rpm -E %fedora).noarch.rpm
+2) dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/12/unitedrpms-$(rpm -E %fedora)-12.fc$(rpm -E %fedora).noarch.rpm
 ```
 
 ## How to import our gpg key
