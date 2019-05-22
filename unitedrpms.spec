@@ -2,7 +2,7 @@
 
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        13%{?dist}
+Release:        14%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -57,9 +57,11 @@ install -d -m755 \
 
 %changelog
 
+* Wed May 22 2019 David Va <davidva AT tuta DOT io> - 28-14
+- Gpg keys updated
+
 * Fri May 10 2019 David Va <davidva AT tuta DOT io> - 28-13
 - Deleted failovermethod
-- New keys
 
 * Wed Mar 13 2019 David Va <davidva AT tuta DOT io> - 28-12
 - Enabled mirror list templates for F31
