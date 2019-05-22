@@ -9,7 +9,7 @@ Group:          System Environment/Base
 License:        GPLv3
 URL:            https://unitedrpms.github.io/
 Source1:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/unitedrpms.repo
-Source2:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/URPMS-GPG-PUBLICKEY-Fedora-24
+Source2:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/URPMS-GPG-PUBLICKEY-Fedora
 BuildArch:      noarch
 Recommends:     unitedrpms-appstream-data
 
@@ -59,6 +59,7 @@ install -d -m755 \
 
 * Fri May 10 2019 David Va <davidva AT tuta DOT io> - 28-13
 - Deleted failovermethod
+- New keys
 
 * Wed Mar 13 2019 David Va <davidva AT tuta DOT io> - 28-12
 - Enabled mirror list templates for F31
