@@ -1,22 +1,20 @@
-#           unitedrpms
+#           [unitedrpms](https://unitedrpms.github.io/)
 
 [![Build Status](https://travis-ci.org/UnitedRPMs/unitedrpms.svg?branch=master)](https://travis-ci.org/UnitedRPMs/unitedrpms)
  
-Summary:        UnitedRPMs Repository Configuration
+**Summary:**        UnitedRPMs Repository Configuration
  
-Version:        29-31
+**Version:**        29-31
  
-License:        GPLv3
+**License:**        GPLv3
 
 
 
-## Have you installed manually unitedrpms?
+## Have you installed unitedrpms before?
 
-You need delete old repositories:
+For reset delete these old repositories:
 
-* su
-* rm -f /etc/yum.repos.d/unitedrpms.repo
-* rm -f /etc/yum.repos.d/fedora-enjoy24.repo
+`sudo rm -f /etc/yum.repos.d/unitedrpms.repo /etc/yum.repos.d/fedora-enjoy24.repo`
 
 
 ## Command Line Setup
@@ -24,9 +22,7 @@ You need delete old repositories:
 **For Fedora 29-31:**
 
 ```
-1) su
-
-2) dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/14/unitedrpms-$(rpm -E %fedora)-14.fc$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/14/unitedrpms-$(rpm -E %fedora)-14.fc$(rpm -E %fedora).noarch.rpm
 ```
 
 ## How to import our gpg key
@@ -49,37 +45,32 @@ You can (*and must if feel doubts!*) check the GPG signature and hash sums of ev
 
 ## Useful packages
 
-Video playback:
+*Video playback*
 ```
-# dnf update
-# dnf install vlc mpv ffmpeg gnome-mpv
-```
-
-Complete Gstreamer framework with all codecs:
-
-```
-# dnf install gstreamer{1,}-{ffmpeg,libav,plugins-{good,ugly,bad{,-free,-nonfree}}} --setopt=strict=0
+sudo dnf update
+sudo dnf install vlc mpv gnome-mpv
 ```
 
-Chromium and Opera with HTML5 Multimedia support:
+*Basic codecs*
 
 ```
-# dnf install chromium-freeworld opera 
+sudo dnf install gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-nonfree \ gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free ffmpeg
 ```
 
-Gradio - superb playbox with the radiostations from around the world
-```
-# dnf install gradio
-```
-
-Need to work or relax with multimedia? No problemo
+*Chromium and Opera with HTML5 Multimedia support*
 
 ```
-# dnf install kdenlive openshot kodi obs-studio spotify-client handbrake devede deedbeef
+sudo dnf install chromium-freeworld 
+sudo dnf install opera 
 ```
------
 
-# [Website](https://unitedrpms.github.io/)
+*Multimedia toolset*
+
+```
+sudo dnf install kdenlive openshot kodi obs-studio spotify-client handbrake \
+devede deedbeef
+```
+
 
 
 
