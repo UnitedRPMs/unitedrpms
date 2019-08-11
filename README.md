@@ -54,7 +54,7 @@ sudo dnf install vlc mpv gnome-mpv
 *Basic codecs*
 
 ```
-sudo dnf install gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-nonfree \ gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free ffmpeg
+sudo dnf install gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-nonfree gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free ffmpeg
 ```
 
 *Chromium and Opera with HTML5 Multimedia support*
@@ -67,8 +67,7 @@ sudo dnf install opera
 *Multimedia toolset*
 
 ```
-sudo dnf install kdenlive openshot kodi obs-studio spotify-client handbrake \
-devede deedbeef
+sudo dnf install kdenlive openshot kodi obs-studio spotify-client handbrake devede deedbeef
 ```
 
 
