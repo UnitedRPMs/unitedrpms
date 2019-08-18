@@ -1,2 +1,0 @@
-https://sourceforge.net/projects/unitedrpms/files/26/x86_64/debug/
-https://osdn.net/projects/unitedrpms/storage/26/x86_64/debug/
