@@ -2,7 +2,7 @@
 
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        14%{?dist}
+Release:        15%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -56,6 +56,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Fri Aug 30 2019 David Va <davidva AT tuta DOT io> - 28-15
+- Added templates for F32 
 
 * Wed May 22 2019 David Va <davidva AT tuta DOT io> - 28-14
 - Gpg keys updated
