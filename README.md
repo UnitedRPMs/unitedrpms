@@ -4,7 +4,7 @@
  
 **Summary:**        UnitedRPMs Repository Configuration
  
-**Version:**        29-31
+**Version:**        29-32
  
 **License:**        GPLv3
 
@@ -40,18 +40,19 @@ You can (*and must if feel doubts!*) check the GPG signature and hash sums of ev
 *Video playback*
 ```
 sudo dnf update
-sudo dnf install vlc mpv gnome-mpv
+sudo dnf install vlc mpv celluloid
 ```
 
 *Basic codecs*
 
 ```
-sudo dnf install gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-nonfree gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free ffmpeg
+sudo dnf install gstreamer1-{libav,plugins-{good,ugly,bad{-free,-nonfree}}} --setopt=strict=0
 ```
 
-*Chromium and Opera with HTML5 Multimedia support*
+*Brave, Chromium and Opera with HTML5 Multimedia support*
 
 ```
+sudo dnf install brave 
 sudo dnf install chromium-freeworld 
 sudo dnf install opera 
 ```
