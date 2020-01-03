@@ -4,14 +4,14 @@
  
 **Summary:**        UnitedRPMs Repository Configuration
  
-**Version:**        29-32
+**Version:**        30-32
  
 **License:**        GPLv3
 
 
 ## Command Line Setup
 
-**For Fedora 29-31:**
+**For Fedora 30-31:**
 
 ```
 sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/15/unitedrpms-$(rpm -E %fedora)-15.fc$(rpm -E %fedora).noarch.rpm
@@ -49,7 +49,7 @@ sudo dnf install vlc mpv celluloid
 sudo dnf install gstreamer1-{libav,plugins-{good,ugly,bad{-free,-nonfree}}} --setopt=strict=0
 ```
 
-*Brave, Chromium and Opera with HTML5 Multimedia support*
+*Brave, Chromium, Brave and Opera with HTML5 Multimedia support*
 
 ```
 sudo dnf install brave 
@@ -60,7 +60,7 @@ sudo dnf install opera
 *Multimedia toolset*
 
 ```
-sudo dnf install kdenlive openshot kodi obs-studio spotify-client handbrake devede deedbeef
+sudo dnf install kdenlive openshot cinelerra kodi obs-studio spotify-client handbrake devede deedbeef winff videomorph
 ```
 
 
