@@ -60,7 +60,7 @@ sudo dnf install opera
 *Multimedia toolset*
 
 ```
-sudo dnf install kdenlive openshot cinelerra kodi obs-studio spotify-client handbrake devede deedbeef winff videomorph
+sudo dnf install kdenlive openshot cinelerra kodi obs-studio spotify-client handbrake devede deedbeef winff videomorph curlew
 ```
 
 
