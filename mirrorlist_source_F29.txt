@@ -1,2 +1,0 @@
-https://sourceforge.net/projects/unitedrpms/files/29/srpm/
-https://osdn.net/projects/unitedrpms/storage/29/srpm/

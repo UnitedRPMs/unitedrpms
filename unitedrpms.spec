@@ -2,7 +2,7 @@
 
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        15%{?dist}
+Release:        16%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -39,11 +39,11 @@ install -d -m755 \
   $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
 
 # GPG Key
-%{__install} -Dp -m644 %{SOURCE2} $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg
+%{__install} -Dp -m644 %{S:2} $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg
 
 
 # Yum .repo files
-%{__install} -p -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
+%{__install} -p -m644 %{S:1} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
 
 # Signed repositories failed detecting variables $releasever and $basearch
 # Sure a bug... https://bugzilla.redhat.com/show_bug.cgi?id=1636743
@@ -56,6 +56,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Fri Feb 07 2020 David Va <davidva AT tuta DOT io> - 30-16
+- Added templates for F33 
 
 * Fri Aug 30 2019 David Va <davidva AT tuta DOT io> - 28-15
 - Added templates for F32 
