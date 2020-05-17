@@ -4,14 +4,14 @@
  
 **Summary:**        UnitedRPMs Repository Configuration
  
-**Version:**        30-32
+**Version:**        30-33
  
 **License:**        GPLv3
 
 
 ## Command Line Setup
 
-**For Fedora 30-31:**
+**For Fedora 30-33:**
 
 ```
 sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/15/unitedrpms-$(rpm -E %fedora)-15.fc$(rpm -E %fedora).noarch.rpm
