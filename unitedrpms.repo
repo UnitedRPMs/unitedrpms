@@ -1,7 +1,7 @@
 [unitedrpms]
 name=unitedrpms $releasever - $basearch
-#mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_x86_64.txt
-baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/x86_64/
+mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_x86_64.txt
+#baseurl=https://sourceforge.net/projects/unitedrpms/files/$releasever/x86_64/
 enabled=1
 priority=1
 metadata_expire=1d
