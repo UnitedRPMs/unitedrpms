@@ -4,14 +4,14 @@
  
 **Summary:**        UnitedRPMs Repository Configuration
  
-**Version:**        30-33
+**Version:**        31-33
  
 **License:**        GPLv3
 
 
 ## Command Line Setup
 
-**For Fedora 30-33:**
+**For Fedora 31-33:**
 
 ```
 sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/15/unitedrpms-$(rpm -E %fedora)-15.fc$(rpm -E %fedora).noarch.rpm
@@ -30,7 +30,7 @@ Our GPG key is integrated in every `unitedrpms-*.noarch.rpm` package. You can al
 You can (*and must if feel doubts!*) check the GPG signature and hash sums of every package. Examples:
 
 ```
-# rpm -K https://github.com/UnitedRPMs/unitedrpms/releases/download/15/unitedrpms-$(rpm -E %fedora)-15.fc$(rpm -E %fedora).noarch.rpm
+# rpm -K https://github.com/UnitedRPMs/unitedrpms/releases/download/17/unitedrpms-$(rpm -E %fedora)-17.fc$(rpm -E %fedora).noarch.rpm
 ```
 
  If all goes well, the following message is displayed: md5 gpg OK. This means that the signature of the package has been verified, and that it is [not corrupt](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-check-rpm-sig.html). 
