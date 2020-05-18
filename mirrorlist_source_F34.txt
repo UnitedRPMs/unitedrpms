@@ -1,0 +1,2 @@
+https://sourceforge.net/projects/unitedrpms/files/34/srpm/
+https://osdn.net/projects/unitedrpms/storage/34/srpm/
