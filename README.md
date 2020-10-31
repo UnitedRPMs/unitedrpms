@@ -24,7 +24,7 @@ Our GPG key is integrated in every `unitedrpms-*.noarch.rpm` package. You can al
 ## Install our rpm with the repository
 
 ```
-sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/17/unitedrpms-$(rpm -E %fedora)-17.fc$(rpm -E %fedora).noarch.rpm
+# sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/17/unitedrpms-$(rpm -E %fedora)-17.fc$(rpm -E %fedora).noarch.rpm
 ```
 
 
