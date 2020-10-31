@@ -36,7 +36,7 @@ You can (*and must if feel doubts!*) check the GPG signature and hash sums of ev
 # rpm -K https://github.com/UnitedRPMs/unitedrpms/releases/download/17/unitedrpms-$(rpm -E %fedora)-17.fc$(rpm -E %fedora).noarch.rpm
 ```
 
- If all goes well, the following message is displayed: md5 gpg OK. This means that the signature of the package has been verified, and that it is [not corrupt](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/s1-check-rpm-sig). 
+ If all goes well, the following message is displayed: md5 gpg OK. This means that the signature of the package has been verified, and that it is [not corrupt](https://www.redhat.com/sysadmin/rpm-gpg-verify-packages). 
 
 ## Useful packages
 
