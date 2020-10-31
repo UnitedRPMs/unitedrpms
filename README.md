@@ -13,17 +13,20 @@
 
 **For Fedora 31-33:**
 
-```
-sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/17/unitedrpms-$(rpm -E %fedora)-17.fc$(rpm -E %fedora).noarch.rpm
-```
-
-## How to import our gpg key
+## Import our gpg key
 
 Our GPG key is integrated in every `unitedrpms-*.noarch.rpm` package. You can also import it manually:
 
 ```
-# rpm --import https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/URPMS-GPG-PUBLICKEY-Fedora
+# sudo rpm --import https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/URPMS-GPG-PUBLICKEY-Fedora
 ```
+
+## Install our rpm with the repository
+
+```
+sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/17/unitedrpms-$(rpm -E %fedora)-17.fc$(rpm -E %fedora).noarch.rpm
+```
+
 
 ## How to check if your rpm is compromised?
 
