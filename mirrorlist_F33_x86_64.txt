@@ -1,2 +1,3 @@
-https://osdn.net/projects/unitedrpms/storage/33/x86_64/
 https://sourceforge.net/projects/unitedrpms/files/33/x86_64/
+https://osdn.net/projects/unitedrpms/storage/33/x86_64/
+
