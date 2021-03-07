@@ -2,12 +2,13 @@
 
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        17%{?dist}
+Release:        18%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
 License:        GPLv3
 URL:            https://unitedrpms.github.io/
+Source0:	https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/unitedrpms-rawhide.repo
 Source1:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/unitedrpms.repo
 Source2:        https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/URPMS-GPG-PUBLICKEY-Fedora
 BuildArch:      noarch
@@ -43,7 +44,12 @@ install -d -m755 \
 
 
 # Yum .repo files
+%if 0%{?fedora} <= 34
 %{__install} -p -m644 %{S:1} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
+%else
+# echo rawhide
+%{__install} -p -m644 %{S:0} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
+%endif
 
 # Signed repositories failed detecting variables $releasever and $basearch
 # Sure a bug... https://bugzilla.redhat.com/show_bug.cgi?id=1636743
@@ -56,6 +62,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Sat Mar 06 2021 David Va <davidva AT tuta DOT io> - 30-18
+- Config for Rawhide
 
 * Sun May 17 2020 David Va <davidva AT tuta DOT io> - 30-17
 - Mirrorlist enabled again 
