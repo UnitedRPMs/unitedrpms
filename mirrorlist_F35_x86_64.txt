@@ -1,3 +1,2 @@
 https://sourceforge.net/projects/unitedrpms/files/35/x86_64/
-https://osdn.net/projects/unitedrpms/storage/35/x86_64/
 
