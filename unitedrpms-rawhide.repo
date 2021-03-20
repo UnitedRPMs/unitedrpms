@@ -1,6 +1,6 @@
 [unitedrpms]
 name=unitedrpms 35 - $basearch
-mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_x86_64.txt
+mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_F35_x86_64.txt
 #baseurl=https://sourceforge.net/projects/unitedrpms/files/35/x86_64/
 enabled=1
 priority=1
