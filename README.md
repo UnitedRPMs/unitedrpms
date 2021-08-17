@@ -4,14 +4,14 @@
  
 **Summary:**        UnitedRPMs Repository Configuration
  
-**Version:**        31-33
+**Version:**        33-35
  
 **License:**        GPLv3
 
 
 ## Command Line Setup
 
-**For Fedora 31-33:**
+**For Fedora 33-35:**
 
 ## Import our gpg key
 
@@ -24,7 +24,7 @@ Our GPG key is integrated in every `unitedrpms-*.noarch.rpm` package. You can al
 ## Install our rpm with the repository
 
 ```
-# sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/17/unitedrpms-$(rpm -E %fedora)-17.fc$(rpm -E %fedora).noarch.rpm
+# sudo dnf -y install https://github.com/UnitedRPMs/unitedrpms/releases/download/19/unitedrpms-$(rpm -E %fedora)-19.fc$(rpm -E %fedora).noarch.rpm
 ```
 
 
@@ -33,7 +33,7 @@ Our GPG key is integrated in every `unitedrpms-*.noarch.rpm` package. You can al
 You can (*and must if feel doubts!*) check the GPG signature and hash sums of every package. Examples:
 
 ```
-# rpm -K https://github.com/UnitedRPMs/unitedrpms/releases/download/17/unitedrpms-$(rpm -E %fedora)-17.fc$(rpm -E %fedora).noarch.rpm
+# rpm -K https://github.com/UnitedRPMs/unitedrpms/releases/download/19/unitedrpms-$(rpm -E %fedora)-19.fc$(rpm -E %fedora).noarch.rpm
 ```
 
  If all goes well, the following message is displayed: md5 gpg OK. This means that the signature of the package has been verified, and that it is [not corrupt](https://www.redhat.com/sysadmin/rpm-gpg-verify-packages). 
