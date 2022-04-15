@@ -1,7 +1,7 @@
 [unitedrpms]
-name=unitedrpms 36 - $basearch
-mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_F36_x86_64.txt
-#baseurl=https://sourceforge.net/projects/unitedrpms/files/36/x86_64/
+name=unitedrpms 37 - $basearch
+mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_F37_x86_64.txt
+#baseurl=https://sourceforge.net/projects/unitedrpms/files/37/x86_64/
 enabled=1
 priority=1
 metadata_expire=1d
@@ -13,9 +13,9 @@ type=rpm
 enabled_metadata=1
 
 [unitedrpms-source]
-name=unitedrpms 36 - Source
+name=unitedrpms 37 - Source
 #mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_source.txt
-baseurl=https://sourceforge.net/projects/unitedrpms/files/36/srpm/
+baseurl=https://sourceforge.net/projects/unitedrpms/files/37/srpm/
 enabled=0
 priority=1
 metadata_expire=1d
@@ -26,9 +26,9 @@ repo_gpgcheck=1
 type=rpm
 
 [unitedrpms-debuginfo]
-name=unitedrpms 36 - $basearch - Debug
+name=unitedrpms 37 - $basearch - Debug
 #mirrorlist=https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/mirrorlist_debug.txt
-baseurl=https://sourceforge.net/projects/unitedrpms/files/36/x86_64/debug/
+baseurl=https://sourceforge.net/projects/unitedrpms/files/37/x86_64/debug/
 enabled=0
 priority=1
 metadata_expire=1d

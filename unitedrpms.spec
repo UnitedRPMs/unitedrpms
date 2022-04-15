@@ -2,7 +2,7 @@
 
 Name:           unitedrpms
 Version:        %{fedora}
-Release:        19%{?dist}
+Release:        20%{?dist}
 Summary:        UnitedRPMs Repository Configuration
 
 Group:          System Environment/Base
@@ -44,7 +44,7 @@ install -d -m755 \
 
 
 # Yum .repo files
-%if 0%{?fedora} <= 35
+%if 0%{?fedora} <= 36
 %{__install} -p -m644 %{S:1} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
 %else
 # echo rawhide
@@ -62,6 +62,9 @@ install -d -m755 \
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+
+* Wed Apr 13 2022 David Va <davidva AT tuta DOT io> - 30-20
+- Config for Rawhide F37
 
 * Sat Aug 14 2021 David Va <davidva AT tuta DOT io> - 30-19
 - Config for Rawhide F36
